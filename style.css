@@ -1,0 +1,230 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  background: #f9fafc;
+  color: #333;
+}
+
+/* Container */
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+}
+
+/* Navbar */
+.header {
+  background: white;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 0;
+}
+
+.logo {
+  color: #4facfe;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+}
+
+.nav-links li {
+  margin-left: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  color: #4facfe;
+}
+
+/* Hero */
+.hero {
+  height: 90vh;
+  background: linear-gradient(135deg, #4facfe, #00f2fe);
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+.hero-content h1 {
+  font-size: 48px;
+}
+
+.hero span {
+  color: yellow;
+}
+
+.hero p {
+  margin: 15px 0;
+}
+
+/* Button */
+.btn {
+  display: inline-block;
+  padding: 12px 25px;
+  background: white;
+  color: #333;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: black;
+  color: white;
+}
+
+/* About */
+.about {
+  padding: 60px 0;
+  text-align: center;
+}
+
+.about h2 {
+  margin-bottom: 20px;
+}
+
+/* Projects */
+.projects {
+  background: #f1f5f9;
+  padding: 60px 0;
+  text-align: center;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  margin-top: 30px;
+}
+
+.project-card {
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+}
+
+/* Contact */
+.contact {
+  padding: 60px 0;
+  text-align: center;
+}
+
+/* Footer */
+footer {
+  background: #111;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    margin-top: 10px;
+  }
+
+  .nav-links li {
+    margin: 10px 0;
+  }
+
+  .hero-content h1 {
+    font-size: 30px;
+  }
+
+  .project-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.nav-links a {
+  position: relative;
+  text-decoration: none;
+  color: #333;
+  transition: 0.3s;
+}
+
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  left: 0;
+  bottom: -5px;
+  background: #4facfe;
+  transition: 0.3s;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+.btn {
+  display: inline-block;
+  padding: 12px 25px;
+  background: white;
+  color: #333;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #4facfe;
+  color: white;
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+.project-card {
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  transition: 0.4s;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.project-card:hover {
+  transform: translateY(-10px) scale(1.03);
+  background: linear-gradient(135deg, #4facfe, #00f2fe);
+  color: white;
+}
+h2 {
+  display: inline-block;
+  transition: 0.3s;
+}
+
+h2:hover {
+  color: #4facfe;
+  transform: scale(1.05);
+}
+footer:hover {
+  background: #4facfe;
+  transition: 0.3s;
+}
